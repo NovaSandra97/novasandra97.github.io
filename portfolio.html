@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandrine Tech | The Mystic Founder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/sandrine_tech_logo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="glass"
+        style="margin: 20px 10%; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 20px; z-index: 1000;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="assets/sandrine_tech_logo.png" alt="Logo" style="width: 40px; border-radius: 8px;">
+            <span style="font-weight: 800; font-size: 1.5rem; letter-spacing: -2px;">SANDRINE <span
+                    class="premium-gradient">TECH</span></span>
+        </div>
+
+        <div style="display: flex; gap: 30px; font-weight: 600; font-size: 0.9rem;">
+            <a href="index.html" style="color: white; text-decoration: none;">HUB</a>
+            <a href="landing_page.html" style="color: white; text-decoration: none;">CLASSGUARD</a>
+            <a href="lab.html" style="color: white; text-decoration: none;">THE LAB</a>
+        </div>
+        <div class="glass" style="padding: 10px 20px; font-size: 0.8rem; letter-spacing: 2px;">SECURE PROTOCOL ACTIVE
+        </div>
+    </nav>
+
+
+    <header
+        style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a0c 100%);">
+        <div class="glitch-text premium-gradient"
+            style="font-weight: 800; font-size: 1rem; letter-spacing: 10px; margin-bottom: 30px;">DECODING FUTURE</div>
+        <h1 style="font-size: 6rem; letter-spacing: -5px;" class="fade-in">Sandrine <br><span
+                class="premium-gradient">Tech Solutions.</span></h1>
+        <p style="max-width: 700px; margin-bottom: 40px; opacity: 0.7;" class="fade-in">We don't just build apps. We
+            build <span class="redacted">Digital Fortresses</span> that protect and empower. Curiosity is our currency.
+        </p>
+        <div class="fade-in">
+            <a href="#projects" class="btn-primary">ENTER THE LAB</a>
+        </div>
+    </header>
+
+    <section id="projects">
+        <h2 style="text-align: center; margin-bottom: 80px;">Project <span class="premium-gradient">Vault</span></h2>
+
+        <!-- Successful Project -->
+        <div class="glass"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 60px; margin-bottom: 40px; cursor: pointer;"
+            onclick="openModal('classguard')">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="assets/logo.png" alt="ClassGuard Pro"
+                    style="width: 200px; filter: drop-shadow(0 0 50px var(--primary-glow));">
+            </div>
+            <div>
+                <div class="premium-gradient" style="font-weight: 800; font-size: 0.8rem; letter-spacing: 2px;">LIVE &
+                    SECURE</div>
+                <h3 style="font-size: 3rem; margin-bottom: 20px;">ClassGuard Pro</h3>
+                <p style="margin-bottom: 30px;">The category-leading security suite for classroom focus. AI-powered
+                    audits, remote lockouts, and behavioral auditing.</p>
+                <div style="display: flex; gap: 10px;">
+                    <span class="btn-primary" style="padding: 8px 15px; font-size: 0.8rem;">VIEW CASE STUDY</span>
+                    <span class="glass" style="padding: 8px 15px; font-size: 0.8rem;">REDACTED SPECS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mysterious/Under Construction Projects -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+            <div class="glass encrypted-card" style="padding: 80px; text-align: center;">
+                <h4 style="color: var(--text-dim);">Project <span class="redacted">Novalink</span></h4>
+            </div>
+            <div class="glass encrypted-card" style="padding: 80px; text-align: center;">
+                <h4 style="color: var(--text-dim);">Project <span class="redacted">Vanguard</span></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal (Mystic Case Study) -->
+    <div id="modal-classguard" class="modal">
+        <div class="modal-content glass" style="padding: 80px; position: relative;">
+            <button onclick="closeModal('classguard')"
+                style="position: absolute; top: 40px; right: 40px; background: none; border: none; color: white; cursor: pointer;"><i
+                    data-lucide="x-circle"></i></button>
+            <div class="premium-gradient" style="font-weight: 800; letter-spacing: 5px; margin-bottom: 20px;">CASE STUDY
+                01</div>
+            <h1>ClassGuard Pro: <span class="premium-gradient">The Breakdown</span></h1>
+
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; margin-top: 60px;">
+                <div>
+                    <div
+                        style="background: #000; height: 400px; border-radius: 20px; display: flex; justify-content: center; align-items: center; margin-bottom: 40px; overflow: hidden; position: relative;">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" autoplay loop muted playsinline>
+                            <source src="assets/demo_video.webp" type="video/webp">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div
+                            style="position: absolute; bottom: 20px; right: 20px; font-weight: 700; background: rgba(0,0,0,0.5); padding: 5px 15px; border-radius: 10px; font-size: 0.8rem;">
+                            LIVE SYSTEM DEMO</div>
+                    </div>
+
+                    <p>ClassGuard Pro was born from a need to protect the academic sanctity of World Mission High
+                        School. Through advanced Windows API hooking and Gemini AI, we created a system that doesn't
+                        just monitor—it understands.</p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 20px;">Core Intelligence</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px;">
+                        <li class="glass" style="padding: 20px;"><i data-lucide="shield"
+                                style="margin-right: 10px; color: var(--accent);"></i> Persistent Screen Guardians</li>
+                        <li class="glass" style="padding: 20px;"><i data-lucide="zap"
+                                style="margin-right: 10px; color: var(--accent);"></i> Real-time AI Context Audits</li>
+                        <li class="glass" style="padding: 20px;"><i data-lucide="globe"
+                                style="margin-right: 10px; color: var(--accent);"></i> Global Tunneled Connectivity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" style="background: #070709;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center;">
+            <div class="glass"
+                style="height: 400px; background: rgba(0, 122, 255, 0.02); display: flex; justify-content: center; align-items: center; font-size: 5rem; opacity: 0.1; font-weight: 900;">
+                S
+            </div>
+            <div>
+                <h2 class="premium-gradient">About The Founder</h2>
+                <p style="margin-bottom: 30px;">M. Sandrine is a high-fidelity software architect specializing in EdTech
+                    and system security. With a focus on Rwandan education, Sandrine Tech aims to build the digital
+                    backbone for schools nationwide.</p>
+                <div style="margin-bottom: 20px; font-weight: 600; display: flex; flex-direction: column; gap: 10px;">
+                    <div><i data-lucide="phone"
+                            style="width: 18px; vertical-align: middle; margin-right: 5px; color: var(--accent);"></i>
+                        0794390892</div>
+                    <div><i data-lucide="mail"
+                            style="width: 18px; vertical-align: middle; margin-right: 5px; color: var(--accent);"></i>
+                        contact.sandrinetech@gmail.com</div>
+                </div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="mailto:contact.sandrinetech@gmail.com" class="btn-primary">OPEN SECURE CHANNEL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 60px 10%; text-align: center; border-top: 1px solid var(--glass-border); background: #000;">
+        <p style="font-size: 0.8rem; color: var(--text-dim); letter-spacing: 2px;">PROTECTED BY SANDRINE TECH ENCRYPTION
+            © 2026</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function openModal(id) { document.getElementById('modal-' + id).style.display = 'block'; document.body.style.overflow = 'hidden'; }
+        function closeModal(id) { document.getElementById('modal-' + id).style.display = 'none'; document.body.style.overflow = 'auto'; }
+    </script>
+</body>
+
+</html>
