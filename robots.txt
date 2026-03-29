@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sandrine-dev.github.io/sitemap.xml
