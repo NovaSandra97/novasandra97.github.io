@@ -5,10 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClassGuard Pro | Elite Classroom Monitoring</title>
+    <!-- Proper SEO Setup -->
+    <meta name="description" content="ClassGuard Pro offers real-time AI-powered monitoring and security for the modern classroom. Keep students focused and classrooms safe.">
+    <meta name="keywords" content="Classroom monitoring, AI tracking, student focus, screen control, educational tech">
+    <meta name="author" content="Sandrine Tech">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ClassGuard Pro | Elite Classroom Monitoring">
+    <meta property="og:description" content="AI-driven monitoring and remote locks for secure classrooms.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sandrine-dev.github.io/landing_page.html">
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/sandrine_tech_logo.png">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Modern Footer specific additions for Premium Feel */
+        .modern-footer {
+            padding: 80px 10% 40px;
+            background: #050507;
+            border-top: 1px solid var(--glass-border);
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .footer-brand p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-top: 20px;
+            line-height: 1.6;
+            max-width: 300px;
+        }
+        
+        .footer-column h4 {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column ul li a {
+            color: var(--text-dim);
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+        
+        .footer-credits {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .modern-footer {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin: 20px auto 0;
+            }
+            .footer-column ul li a:hover {
+                padding-left: 0;
+            }
+            .footer-credits {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,10 +106,10 @@
             <span style="font-weight: 800; font-size: 1.5rem; letter-spacing: -1px;">ClassGuard <span
                     class="premium-gradient">Pro</span></span>
         </div>
-        <div style="display: flex; gap: 30px; font-weight: 600; font-size: 0.9rem;">
+        <div style="display: flex; gap: 30px; font-weight: 600; font-size: 0.9rem;" class="desktop-nav">
             <a href="index.html" style="color: white; text-decoration: none;">HUB</a>
             <a href="#features" style="color: white; text-decoration: none;">FEATURES</a>
-            <a href="lab.html" style="color: white; text-decoration: none;">THE LAB</a>
+            <a href="#about-dev" style="color: white; text-decoration: none;">ABOUT DEVs</a>
         </div>
         <a href="#demo" class="btn-primary" style="padding: 10px 20px;">Request Demo</a>
     </nav>
@@ -37,7 +124,7 @@
                 Teacher.</span></h1>
         <p style="max-width: 650px; margin-bottom: 40px;">ClassGuard Pro provides real-time AI-powered monitoring and
             security for the modern classroom. Keep students focused and classrooms safe.</p>
-        <div style="display: flex; gap: 20px;">
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
             <a href="#demo" class="btn-primary">Get Started Today</a>
             <a href="#features" style="color: white; font-weight:600; text-decoration: none; padding: 12px 30px;"
                 class="glass">View Features</a>
@@ -96,7 +183,6 @@
                     </div>
                     <div>
                         <h4 style="font-size: 1.5rem; margin-bottom: 10px;">Persistent Remote Lock</h4>
-                        <h4 style="font-size: 1.5rem; margin-bottom: 10px;">Persistent Remote Lock</h4>
                         <p style="font-size: 1rem;">Lock student workstations instantly from your dashboard if
                             distractions continue.</p>
                     </div>
@@ -108,7 +194,8 @@
                     </div>
                     <div>
                         <h4 style="font-size: 1.5rem; margin-bottom: 10px;">AI Behavioral Audit</h4>
-                        <p style="font-size: 1rem;">The system automatically tags irrelevant activity, saving you time and effort.</p>
+                        <p style="font-size: 1rem;">Powered by Gemini AI, the system automatically tags irrelevant
+                            activity for you.</p>
                     </div>
                 </div>
             </div>
@@ -125,11 +212,30 @@
             </div>
         </div>
     </section>
+    
+    <!-- About The Developer Section -->
+    <section id="about-dev" style="background: #0f0f12; text-align: center;">
+        <h2 class="premium-gradient">About The Architect</h2>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 30px; margin-top: 40px; max-width: 800px; margin: 40px auto 0;">
+            <div class="glass" style="padding: 50px; text-align: left; border-top: 4px solid var(--primary);">
+                <div style="display: flex; gap: 30px; align-items: center;">
+                    <img src="assets/sandrine_tech_logo.png" style="width: 100px; height: 100px; border-radius: 50%;" alt="M. Sandrine" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' fill=\'%23007AFF\' viewBox=\'0 0 24 24\'><path d=\'M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2ZM12 6A3.5 3.5 0 1 1 8.5 9.5A3.5 3.5 0 0 1 12 6Zm0 13a7 7 0 0 1-5.83-3.13C6.31 14.54 10 14 12 14c2 0 5.69.54 5.83 1.87A7 7 0 0 1 12 19Z\'/></svg>'">
+                    <div>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 5px;">M. Sandrine</h3>
+                        <p style="color: var(--primary); font-weight: 600; font-size: 1rem;">Lead Developer & Educator</p>
+                    </div>
+                </div>
+                <p style="margin-top: 30px; font-size: 1.05rem; line-height: 1.8;">
+                    With a profound background in educational technology and deep experience instructing computer labs, I witnessed firsthand the friction of keeping students focused in unrestricted digital environments. ClassGuard Pro was engineered specifically to solve the limitations of generic IT systems, giving absolute, transparent control back to teachers.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <section id="pricing" style="background: #0f0f12; text-align: center;">
+    <section id="pricing" style="text-align: center;">
         <h2 class="premium-gradient">Simple Pricing</h2>
-        <div style="display: flex; justify-content: center; gap: 40px; margin-top: 60px;">
-            <div class="glass" style="padding: 60px 40px; width: 350px;">
+        <div style="display: flex; justify-content: center; gap: 40px; margin-top: 60px; flex-wrap: wrap;">
+            <div class="glass" style="padding: 60px 40px; width: 100%; max-width: 350px;">
                 <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-dim);">BASIC PILOT</span>
                 <div style="font-size: 3rem; font-weight: 800; margin: 20px 0;">Free</div>
                 <p style="font-size: 0.9rem; margin-bottom: 30px;">For 1 Classroom / 30 Days<br>Full features included
@@ -147,28 +253,28 @@
                     Trial</a>
             </div>
             <div class="glass"
-                style="padding: 60px 40px; width: 350px; border: 2px solid var(--primary); transform: scale(1.1); background: rgba(0, 122, 255, 0.05);">
+                style="padding: 60px 40px; width: 100%; max-width: 350px; border: 2px solid var(--primary); transform: scale(1.05); background: rgba(0, 122, 255, 0.05);">
                 <span class="premium-gradient" style="font-size: 0.9rem; font-weight: 700;">🔥 MOST POPULAR</span>
                 <div style="font-size: 3rem; font-weight: 800; margin: 20px 0;">$100</div>
                 <p style="font-size: 0.9rem; margin-bottom: 30px;">Annual Site License<br>Unlimited Teachers & Students
                 </p>
                 <ul style="text-align: left; list-style: none; padding-left: 20px; margin-bottom: 40px;">
                     <li style="margin-bottom: 10px; position: relative;"><i data-lucide="check"
-                            style="position: absolute; left: -25px; color: #2ecc71; width: 18px;"></i> Full School
-                        Support</li>
+                            style="position: absolute; left: -25px; color: #2ecc71; width: 18px;"></i> Full School Support
+                    </li>
                     <li style="margin-bottom: 10px; position: relative;"><i data-lucide="check"
-                            style="position: absolute; left: -25px; color: #2ecc71; width: 18px;"></i> Priority 24/7
-                        Support</li>
+                            style="position: absolute; left: -25px; color: #2ecc71; width: 18px;"></i> Priority 24/7 Support
+                    </li>
                     <li style="margin-bottom: 10px; position: relative;"><i data-lucide="check"
-                            style="position: absolute; left: -25px; color: #2ecc71; width: 18px;"></i> 1 Year Free
-                        Updates</li>
+                            style="position: absolute; left: -25px; color: #2ecc71; width: 18px;"></i> 1 Year Free Updates
+                    </li>
                 </ul>
                 <a href="#demo" class="btn-primary" style="display: block;">Buy License</a>
             </div>
         </div>
     </section>
 
-    <section id="demo" style="text-align: center;">
+    <section id="demo" style="text-align: center; background: #0f0f12;">
         <h2>Ready to Change Your <span class="premium-gradient">Standard of Teaching?</span></h2>
         <div class="glass" style="max-width: 600px; margin: 0 auto; padding: 60px;">
             <form style="display: flex; flex-direction: column; gap: 20px; text-align: left;">
@@ -188,18 +294,45 @@
         </div>
     </section>
 
-    <footer
-        style="padding: 60px 10%; background: #070709; border-top: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; align-items: center; gap: 12px;">
-            <img src="assets/logo.png" alt="Logo" style="width: 30px;">
-            <span style="font-weight: 800; font-size: 1.2rem; letter-spacing: -1px;">ClassGuard Pro</span>
+    <footer class="modern-footer">
+        <div class="footer-brand">
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <img src="assets/logo.png" alt="Logo" style="width: 30px;">
+                <span style="font-weight: 800; font-size: 1.4rem; letter-spacing: -1px;">ClassGuard <span class="premium-gradient">Pro</span></span>
+            </div>
+            <p>Empowering educators with world-class tools. Build focus, secure classrooms, and streamline laboratory management permanently.</p>
         </div>
-        <div style="color: var(--text-dim); font-size: 0.9rem;">
-            © 2026 Sandrine Tech. All Rights Reserved. <br>
-            Developed by <strong>M. Sandrine</strong>
+        
+        <div class="footer-column">
+            <h4>Platform</h4>
+            <ul>
+                <li><a href="#features">Elite Features</a></li>
+                <li><a href="#pricing">Licensing Options</a></li>
+                <li><a href="https://github.com/sandrine-dev/ClassGuardian-Pro/releases">Download Client</a></li>
+            </ul>
         </div>
-        <div style="display: flex; gap: 20px;">
-            <a href="portfolio.html" style="color: white; text-decoration: none; font-weight: 600;">About Developer</a>
+
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#about-dev">About Us</a></li>
+                <li><a href="portfolio.html">Our Mission</a></li>
+                <li><a href="#demo">Contact Sales</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Legal & Docs</h4>
+            <ul>
+                <li><a href="#">Privacy Protocol</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security Audits</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-credits">
+            <div>© 2026 Sandrine Tech. All Rights Reserved.</div>
+            <div style="font-weight: 600;">Developed by <span class="premium-gradient">M. Sandrine</span></div>
         </div>
     </footer>
 
